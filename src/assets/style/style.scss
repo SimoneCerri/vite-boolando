@@ -1,5 +1,6 @@
-@use "./style_components/siteHeader" as *;
 @use "bootstrap";
+@use "./style_components/root" as *;
+@use "./style_components/siteHeader" as *;
 
 /* #region Common */
 
