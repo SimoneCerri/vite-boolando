@@ -1,11 +1,14 @@
 <script>
-
+export default
+{
+    name: "SiteMain",
+}
 </script>
 
 <template>
     <main id="site_main">
         <div class="card">
-            <img src="./assets/img/1.webp" alt="">
+            <img src="/public/img/1.webp" alt="">
             <span class="discount">-50%</span>
             <span class="sustain">Sostenibilità</span>
             <span class="hearts">&hearts;</span> <br>
@@ -19,7 +22,7 @@
             <span class="old_price">29.99&euro;</span>
         </div>
         <div class="card">
-            <img src="./assets/img/2.webp" alt="">
+            <img src="/public/img/2.webp" alt="">
             <span class="discount">-30%</span>
             <span class="hearts">&hearts;</span> <br>
             <span class="brand">Guess</span> <br>
@@ -32,7 +35,7 @@
             <span class="old_price">29.99&euro;</span>
         </div>
         <div class="card card_width">
-            <img src="./assets/img/3.webp" alt="">
+            <img src="/public/img/3.webp" alt="">
             <span class="discount">-30%</span>
             <span class="hearts">&hearts;</span> <br>
             <span class="brand">Come Zucchero Filato</span> <br>
@@ -45,7 +48,7 @@
             <span class="old_price">184.99&euro;</span>
         </div>
         <div class="card">
-            <img src="./assets/img/4.webp" alt="">
+            <img src="/public/img/4.webp" alt="">
             <span class="discount">-50%</span>
             <span class="sustain">Sostenibilità</span>
             <span class="hearts">&hearts;</span> <br>
@@ -59,7 +62,7 @@
             <span class="old_price">29.99&euro;</span>
         </div>
         <div class="card">
-            <img src="./assets/img/5.webp" alt="">
+            <img src="/public/img/5.webp" alt="">
             <span class="hearts">&hearts;</span> <br>
             <span class="brand">Maya Deluxe</span> <br>
             <span>
@@ -70,7 +73,7 @@
             <span class="new_price">99.99&euro;</span>
         </div>
         <div class="card">
-            <img src="./assets/img/6.webp" alt="">
+            <img src="/public/img/6.webp" alt="">
             <span class="sustain sustain_different">Sostenibilità</span>
             <span class="hearts">&hearts;</span> <br>
             <span class="brand">Esprit</span> <br>

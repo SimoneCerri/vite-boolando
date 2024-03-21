@@ -1,0 +1,52 @@
+@use "./root" as *;
+
+/* #region Utilities */
+
+.discount {
+    color: $light_color;
+    background-color: $danger_color;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.sustain {
+    color: $light_color;
+    background-color: $sustainability_color;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 0.5rem 0.5rem;
+}
+
+.sustain_different {
+    left: 0;
+}
+
+.hearts {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    background-color: $light_color;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.brand {
+    color: $brand_text_color;
+}
+
+.new_price {
+    color: $danger_color;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
+
+/* #endregion Utilities */

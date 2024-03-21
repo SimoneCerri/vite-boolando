@@ -1,0 +1,27 @@
+@use "./root" as *;
+
+
+/* #region Main */
+
+#site_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 33%;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card:hover .hearts {
+    display: block;
+    color: $dark_color;
+}
+
+/* #endregion Main */

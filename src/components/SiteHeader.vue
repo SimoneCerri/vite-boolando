@@ -1,33 +1,25 @@
 <script>
+import NavHeader from "./NavHeader.vue";
+import CartHeader from "./CartHeader.vue";
+import LogoHeader from "./LogoHeader.vue";
+
 export default
 {
     name:"SiteHeader",
+    components:
+    {
+        NavHeader,
+        CartHeader,
+        LogoHeader
+    }
 }
 </script>
 
 <template>
     <header id="site_header">
-        <nav>
-            <ul class="list">
-                <li>
-                    <a href="">
-                        Donna
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Uomo
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Bambini
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <NavHeader/>
         <div class="logo">
-            <img src="./assets/img/boolean-logo.png" alt="">
+            <img src="/public/img/boolean-logo.png" alt="">
         </div>
         <div class="cart">
             <a href="">
