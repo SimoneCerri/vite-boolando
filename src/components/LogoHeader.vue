@@ -7,7 +7,9 @@ export default
 </script>
 
 <template>
-
+    <div class="logo">
+        <img src="/public/img/boolean-logo.png" alt="">
+    </div>
 
 </template>
 
