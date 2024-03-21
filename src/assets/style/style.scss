@@ -1,0 +1,142 @@
+@use "./style_components/siteHeader" as *;
+@use "bootstrap";
+
+/* #region Common */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+li {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+
+.discount {
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.sustain {
+    color: white;
+    background-color: green;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 0.5rem 0.5rem;
+}
+
+.sustain_different {
+    left: 0;
+}
+
+.hearts {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.brand {
+    color: grey;
+}
+
+.new_price {
+    color: red;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+#site_header {
+    background-color: rgb(241, 121, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    z-index: 9999;
+}
+
+.list {
+    display: flex;
+}
+
+.logo>img {
+    width: 100px;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+#site_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 33%;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card:hover .hearts {
+    display: block;
+    color: black;
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+#site_footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 2rem;
+    /* align-items: center; */
+}
+
+.footer_1 {
+    padding-left: 10rem;
+}
+
+.footer_2 {
+    padding-right: 10rem;
+}
+
+/* #endregion Footer */
