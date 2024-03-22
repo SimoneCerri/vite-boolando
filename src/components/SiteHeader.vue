@@ -1,7 +1,7 @@
 <script>
-import NavHeader from "./NavHeader.vue";
-import CartHeader from "./CartHeader.vue";
-import LogoHeader from "./LogoHeader.vue";
+import NavHeader from "./header/NavHeader.vue";
+import CartHeader from "./header/CartHeader.vue";
+import LogoHeader from "./header/LogoHeader.vue";
 
 export default
 {

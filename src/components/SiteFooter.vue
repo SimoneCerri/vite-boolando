@@ -1,6 +1,6 @@
 <script>
-import LeftFooter from "./LeftFooter.vue";
-import RightFooter from "./RightFooter.vue";
+import LeftFooter from "./footer/LeftFooter.vue";
+import RightFooter from "./footer/RightFooter.vue";
 
 export default
     {
