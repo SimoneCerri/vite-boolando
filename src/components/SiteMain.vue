@@ -1,6 +1,7 @@
 <script>
 import {products} from "../data.js"
 import ProductCard from "./main/ProductCard.vue"
+import {store} from "../store.js"
 
 export default
 {
@@ -12,7 +13,8 @@ export default
     data()
     {
         return{
-            products
+            products,
+            store
         }
     }
 }
