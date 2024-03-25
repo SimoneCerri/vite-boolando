@@ -1,4 +1,7 @@
-export const products = 
+//array with my entire data, write by hands or (GO TO store.js)
+
+
+/* export const products = 
 [
     {
         id:1,
@@ -60,4 +63,4 @@ export const products =
         discount: false,
         sustenability: true,
     },
-]
+] */

@@ -1,5 +1,5 @@
 <script>
-import {products} from "../data.js"
+/* import {products} from "../data.js" */
 import ProductCard from "./main/ProductCard.vue"
 import {store} from "../store.js"
 
@@ -13,16 +13,21 @@ export default
     data()
     {
         return{
-            products,
+            //products,
             store
         }
+    },
+    mounted()
+    {
+        //console.log(store);
+        store.getApi(store.data_api_url)
     }
 }
 </script>
 
 <template>
     <main id="site_main">
-        <ProductCard v-for="product in products" :product="product" :key="product.id" />
+        <ProductCard v-for="product in store.products" :product="product" :key="product.id" />
     </main>
     <!-- /#site_main -->
 </template>
