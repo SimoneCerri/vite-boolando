@@ -35,4 +35,13 @@ export default
 
 </template>
 
-<style lang="scss"></style>
+<style scoped>
+li {
+    padding: 0.5rem 0;
+}
+
+h4 
+{
+    font-size: 24px;
+}
+</style>
