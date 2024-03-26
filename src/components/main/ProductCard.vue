@@ -17,7 +17,7 @@ export default
         <span class="hearts">&hearts;</span> <br>
         <span class="brand">{{product.brand}}</span> <br>
         <span>
-            <strong>
+            <strong @click="$emit(showProduct)">
                 {{product.name}}
             </strong>
         </span> <br>
