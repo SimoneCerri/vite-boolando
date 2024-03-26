@@ -5,6 +5,13 @@ export default
         props:
         {
             product: Object
+        },
+        methods:
+        {
+            showProduct()
+            {
+                
+            }
         }
     }
 </script>
