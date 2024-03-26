@@ -9,6 +9,8 @@
     top: 80%;
     left: 0;
     padding: 0.5rem 0.5rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .sustain {
@@ -18,6 +20,8 @@
     top: 80%;
     left: 10%;
     padding: 0.5rem 0.5rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .sustain_different {
@@ -31,9 +35,12 @@
     background-color: $light_color;
     width: 2rem;
     height: 2rem;
+    line-height: 2rem;
     text-align: center;
     font-size: 1.5rem;
     display: none;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 
@@ -43,6 +50,7 @@
 
 .new_price {
     color: $danger_color;
+    padding-right: 1rem;
 }
 
 .old_price {

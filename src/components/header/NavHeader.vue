@@ -10,17 +10,17 @@ export default
     <nav>
         <ul class="list">
             <li>
-                <a href="">
+                <a href="#donna">
                     Donna
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#uomo">
                     Uomo
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#bambini">
                     Bambini
                 </a>
             </li>

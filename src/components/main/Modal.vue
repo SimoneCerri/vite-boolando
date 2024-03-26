@@ -3,9 +3,14 @@
 export default
     {
         name: "Modal",
+        emits:["close-modal"],
+        props:
+        {
+            product: Object
+        },
         methods:
         {
-
+            
         }
     }
 
@@ -14,13 +19,21 @@ export default
 <template>
     <div class="modal-overlay">
         <div class="modal">
-            <img class="check" src="" alt="" />
-            <h6>Title</h6>
-            <p>body</p>
-            <button>button</button>
+            <img class="check" :src="product.image" alt="" />
+            <h6>
+                <strong>
+
+                    {{product.name}}
+                </strong>
+            </h6>
+            <p>by</p>
+            <p class="brand">{{ product.brand }}</p>
+            <span class="new_price">{{ product.price}}&euro;</span>
+            <span v-if="product.discount" class="old_price">{{ product.priceDiscounted }}&euro;</span>
         </div>
         <div class="close">
-            <img class="close-img" src="" alt="" />
+            <!-- <img class="close-img" src="" alt="" /> -->
+            <button @click="$emit('close-modal')">X</button>
         </div>
     </div>
 </template>
@@ -50,16 +63,21 @@ export default
 }
 
 .close {
-    margin: 10% 0 0 16px;
+    /* margin: 10% 0 0 16px; */
     cursor: pointer;
+    position: absolute;
+    left:66%;
+    top:6%;
 }
 
-.close-img {
+/* .close-img {
     width: 25px;
-}
+} */
 
 .check {
     width: 150px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h6 {
@@ -74,10 +92,10 @@ p {
 }
 
 button {
-    background-color: #ac003e;
-    width: 150px;
+    background-color: #333;
+    width: 40px;
     height: 40px;
-    color: white;
+    color: red;
     font-size: 14px;
     border-radius: 16px;
     margin-top: 50px;

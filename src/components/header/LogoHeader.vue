@@ -8,7 +8,9 @@ export default
 
 <template>
     <div class="logo">
-        <img src="/public/img/boolean-logo.png" alt="">
+        <a href="#home">
+          <img src="/public/img/boolean-logo.png" alt="">  
+        </a>
     </div>
 
 </template>

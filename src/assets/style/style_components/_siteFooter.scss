@@ -6,17 +6,17 @@
     display: flex;
     background-color: $dark_color;
     color: $light_color;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 2rem;
     /* align-items: center; */
 }
 
-.footer_1 {
-    padding-left: 10rem;
-}
-
 .footer_2 {
-    padding-right: 10rem;
+    /* padding-right: 10rem; */
+    h4 
+    {
+        padding-bottom: 1rem;
+    }
 
     i 
     {

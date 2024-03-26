@@ -11,16 +11,27 @@
     width: 100%;
     padding: 1rem;
     z-index: 9999;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .list {
     display: flex;
 }
 
-.logo>img {
+/* .logo>img {
     width: 100px;
-}
+} */
 
+.logo
+{
+    a
+    {
+        img 
+        {
+            max-width: 140px;
+        }
+    }
+}
 
 .cart
 {

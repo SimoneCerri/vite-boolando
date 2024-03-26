@@ -13,15 +13,24 @@
     width: 33%;
     padding: 2rem;
     margin-top: 5rem;
+    
+
 }
 
 .card>img {
     width: 100%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 .card:hover .hearts {
     display: block;
     color: $dark_color;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
+.info
+{
+    padding: 1rem;
+}
 /* #endregion Main */

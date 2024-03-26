@@ -1,9 +1,9 @@
 <script>
 
 export default
-{
-    name: "LeftFooter",
-}
+    {
+        name: "LeftFooter",
+    }
 </script>
 
 <template>
@@ -11,15 +11,26 @@ export default
         <h4>
             Boolando s.r.l
         </h4> <br>
-        <a href="">
-            Informazioni legali
-        </a>
-        <a href="">
-            Informativa sulla privacy
-        </a>
-        <a href="">
-            Diritto di recesso
-        </a>
+        <ul>
+            <li>
+                <a href="#info-legacy">
+                    Informazioni legali
+                </a>
+            </li>
+            <li>
+                <a href="#info-privacy">
+                    Informativa sulla privacy
+                </a>
+            </li>
+            <li>
+                <a href="#rep-right">
+                    Diritto di recesso
+                </a>
+            </li>
+        </ul>
+
+
+
     </div>
 
 </template>

@@ -2,13 +2,11 @@
 /* import {products} from "../data.js" */
 import ProductCard from "./main/ProductCard.vue"
 import {store} from "../store.js"
-/* import someEvent from "./main/ProductCard.vue" */
 import Modal from "./main/Modal.vue"
 
 export default
 {
     name: "SiteMain",
-    /* emits: ["someEvent"], */
     components:
     {
         ProductCard,
@@ -19,16 +17,19 @@ export default
         return{
             //products,
             store,
-            showModal: false
+            showModal: false,
+            productModal: null,
         }
     },
     methods:
     {
-        changeShowModal()
+        changeShowModal(product)
         {
-            this.showModal = true
+            this.productModal = product;
+
+            this.showModal = !this.showModal;
             console.log(this.showModal);
-        }
+        },
     },
     mounted()
     {
@@ -45,8 +46,12 @@ export default
 
 <template>
     <main id="site_main">
-        <Modal @someEvent="changeShowModal" v-show="showModal" />
-        <ProductCard v-for="product in store.products" :product="product" :key="product.id" />
+        <ProductCard v-for="product in store.products" :product="product" :key="product.id" @show-modal="changeShowModal(product)" />
+
+        <!-- DON'T USE V-SHOW, BETTER V-IF OR WILL LOAD AN EMPTY DIV -->
+        <div v-if="showModal">
+            <Modal :product="productModal" @close-modal="changeShowModal"/>
+        </div>
     </main>
 </template>
 
