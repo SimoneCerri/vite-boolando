@@ -2,16 +2,18 @@
 export default
     {
         name: "Card",
+        emits: ["someEvent"],
         props:
         {
             product: Object
         },
         methods:
         {
-            showProduct()
+            /* event()
             {
-                
-            }
+                this.$emit("someEvent")
+                console.log(this.$emit);
+            } */
         }
     }
 </script>
@@ -24,7 +26,7 @@ export default
         <span class="hearts">&hearts;</span> <br>
         <span class="brand">{{product.brand}}</span> <br>
         <span>
-            <strong @click="$emit(showProduct)">
+            <strong @click="$emit('someEvent')">
                 {{product.name}}
             </strong>
         </span> <br>

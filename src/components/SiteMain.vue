@@ -2,13 +2,13 @@
 /* import {products} from "../data.js" */
 import ProductCard from "./main/ProductCard.vue"
 import {store} from "../store.js"
-import showProduct from "./main/ProductCard.vue"
+/* import someEvent from "./main/ProductCard.vue" */
 import Modal from "./main/Modal.vue"
 
 export default
 {
     name: "SiteMain",
-    emit: showProduct,
+    /* emits: ["someEvent"], */
     components:
     {
         ProductCard,
@@ -26,11 +26,8 @@ export default
     {
         changeShowModal()
         {
-            if (this.emit)
-            {
-                this.showModal = true
-                console.log(this.showModal);
-            }
+            this.showModal = true
+            console.log(this.showModal);
         }
     },
     mounted()
@@ -48,7 +45,7 @@ export default
 
 <template>
     <main id="site_main">
-        <Modal v-show="showModal" />
+        <Modal @someEvent="changeShowModal" v-show="showModal" />
         <ProductCard v-for="product in store.products" :product="product" :key="product.id" />
     </main>
 </template>

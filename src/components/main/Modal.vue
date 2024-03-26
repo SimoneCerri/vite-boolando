@@ -2,9 +2,10 @@
 
 export default
     {
+        name: "Modal",
         methods:
         {
-            
+
         }
     }
 
