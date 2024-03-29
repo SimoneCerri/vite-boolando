@@ -18,7 +18,6 @@ export const store = reactive
         })
         .catch(err => {
             console.error(err.message) //log in console the error (if there are errors) just in case
-        })
-        
+        })        
     },
 })

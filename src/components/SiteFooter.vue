@@ -21,4 +21,6 @@ export default
     <!-- /#site_footer -->
 </template>
 
-<style></style>
+<style>
+
+</style>

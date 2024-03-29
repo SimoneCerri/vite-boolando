@@ -17,7 +17,8 @@ export default
             <i class="fa-solid fa-bag-shopping"></i>
         </a>
     </div>
-
 </template>
 
-<style lang="scss"></style>
+<style>
+
+</style>

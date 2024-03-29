@@ -22,7 +22,6 @@ export default
             <img class="check" :src="product.image" alt="" />
             <h6>
                 <strong>
-
                     {{product.name}}
                 </strong>
             </h6>
@@ -37,7 +36,6 @@ export default
         </div>
     </div>
 </template>
-
 
 <style>
 .modal-overlay {
@@ -63,16 +61,11 @@ export default
 }
 
 .close {
-    /* margin: 10% 0 0 16px; */
     cursor: pointer;
     position: absolute;
     left:66%;
     top:6%;
 }
-
-/* .close-img {
-    width: 25px;
-} */
 
 .check {
     width: 150px;

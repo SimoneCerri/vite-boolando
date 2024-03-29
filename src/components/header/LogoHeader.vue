@@ -12,7 +12,8 @@ export default
           <img src="/public/img/boolean-logo.png" alt="">  
         </a>
     </div>
-
 </template>
 
-<style lang="scss"></style>
+<style>
+
+</style>

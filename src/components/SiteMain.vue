@@ -28,7 +28,7 @@ export default
             this.productModal = product;
 
             this.showModal = !this.showModal;
-            console.log(this.showModal);
+            //console.log(this.showModal);
         },
     },
     mounted()

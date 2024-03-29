@@ -3,7 +3,7 @@
     [
         {
             "id": 1,
-            "image": "/public/img/1.webp",
+            "image": "/img/1.webp",
             "brand": "Levi's",
             "name": "RELAXED FIT TEE UNISEX",
             "price": "29.99",
@@ -13,7 +13,7 @@
         },
         {
             "id": 2,
-            "image": "/public/img/2.webp",
+            "image": "/img/2.webp",
             "brand": "Guess",
             "name": "ROSES TEE",
             "price": "29.99",
@@ -23,7 +23,7 @@
         },
         {
             "id": 3,
-            "image": "/public/img/3.webp",
+            "image": "/img/3.webp",
             "brand": "Come Zucchero Filato",
             "name": "VOGLIA DI COLORI PASTELLO",
             "price": "184.99",
@@ -33,7 +33,7 @@
         },
         {
             "id": 4,
-            "image": "/public/img/4.webp",
+            "image": "/img/4.webp",
             "brand": "Levi's",
             "name": "TEE UNISEX",
             "price": "29.99",
@@ -43,7 +43,7 @@
         },
         {
             "id": 5,
-            "image": "/public/img/5.webp",
+            "image": "/img/5.webp",
             "brand": "Maya Deluxe",
             "name": "STRIPE BODICE",
             "price": "99.99",
@@ -53,7 +53,7 @@
         },
         {
             "id": 6,
-            "image": "/public/img/6.webp",
+            "image": "/img/6.webp",
             "brand": "Esprit",
             "name": "MAGLIONE - BLACK",
             "price": "24.99",

@@ -22,8 +22,8 @@ export default
         <CartHeader/>
     </header>
     <!-- /#site_header -->
-
 </template>
 
-<style lang="scss">
+<style>
+
 </style>

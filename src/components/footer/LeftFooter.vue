@@ -10,7 +10,8 @@ export default
     <div class="footer_1">
         <h4>
             Boolando s.r.l
-        </h4> <br>
+        </h4>
+        <br>
         <ul>
             <li>
                 <a href="#info-legacy">
@@ -28,11 +29,7 @@ export default
                 </a>
             </li>
         </ul>
-
-
-
     </div>
-
 </template>
 
 <style scoped>
