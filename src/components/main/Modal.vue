@@ -18,9 +18,12 @@ export default
 
 <template>
     <div class="modal-overlay">
-        <div class="modal">
-            <img class="check" :src="product.image" alt="" />
-            <h6>
+        <div class="modal df">
+            <div class="modal_image">
+               <img class="check" :src="product.image" alt="" /> 
+            </div>
+            <div class="modal_info">
+              <h6>
                 <strong>
                     {{product.name}}
                 </strong>
@@ -28,7 +31,8 @@ export default
             <p>by</p>
             <p class="brand">{{ product.brand }}</p>
             <span class="new_price">{{ product.price}}&euro;</span>
-            <span v-if="product.discount" class="old_price">{{ product.priceDiscounted }}&euro;</span>
+            <span v-if="product.discount" class="old_price">{{ product.priceDiscounted }}&euro;</span>  
+            </div>
         </div>
         <div class="close">
             <!-- <img class="close-img" src="" alt="" /> -->
@@ -37,7 +41,18 @@ export default
     </div>
 </template>
 
-<style>
+<style scoped>
+.df 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal_image
+    {
+        flex-basis: 50%;
+    }
+}
 .modal-overlay {
     position: fixed;
     top: 0;
