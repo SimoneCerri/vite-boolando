@@ -7,6 +7,10 @@ export const store = reactive
 ({
     products:[],
     data_api_url:"http://localhost:3000/products",
+    /**
+     * Make the ajax call with axios to take all Store's info about our Products
+     * @param {String} url 
+     */
     getApi(url)
     {
         axios.get(url)

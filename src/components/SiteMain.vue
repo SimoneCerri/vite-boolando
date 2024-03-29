@@ -23,6 +23,10 @@ export default
     },
     methods:
     {
+        /**
+         * Toggle showModal [true/false] and take Product's info
+         * @param {Object} product 
+         */
         changeShowModal(product)
         {
             this.productModal = product;
@@ -41,7 +45,6 @@ export default
         
     }
 }
-
 </script>
 
 <template>
