@@ -46,7 +46,7 @@ export default
 
 <template>
     <main id="site_main">
-        <ProductCard v-for="product in store.products" :product="product" :key="product.id" @show-modal="changeShowModal(product)" />
+        <ProductCard v-for="product in store.products" :product :key="product.id" @show-modal="changeShowModal(product)" />
 
         <!-- DON'T USE V-SHOW, BETTER V-IF OR WILL LOAD AN EMPTY DIV -->
         <div v-if="showModal">
